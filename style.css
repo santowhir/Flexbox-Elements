@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
- v2.0 | 20110126
- License: none (public domain)
-*/
+   v2.0 | 20110126
+   License: none (public domain)
+  */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,41 +46,106 @@ table {
   border-spacing: 0; }
 
 .fl {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  margin: 10px; }
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .fl_child {
+    background: #ccc;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%; }
 
 .fl_1 {
-  width: calc(100% - 60px); }
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
 
 .fl_2 {
-  width: calc(50% - 60px); }
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
 
 .fl_3 {
-  width: calc(33.33% - 60px); }
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3333333333%;
+  -ms-flex: 0 0 33.3333333333%;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
 
 .fl_4 {
-  width: calc(25% - 60px); }
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
 
-.fl:last-child {
-  margin: 10px 10px 20px 10px; }
+.fl_5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%; }
 
-.fl_child {
-  margin: auto;
-  background: #ccc;
-  margin: 10px 10px 0 10px;
-  padding: 20px 20px 40px 20px;
-  position: relative; }
+.fl_6 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 16.6666666667%;
+  -ms-flex: 0 0 16.6666666667%;
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%; }
 
-.fl_child_button {
-  position: absolute;
-  bottom: 20px; }
+.fl_7 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 14.2857142857%;
+  -ms-flex: 0 0 14.2857142857%;
+  flex: 0 0 14.2857142857%;
+  max-width: 14.2857142857%; }
 
-p {
-  margin: 0 0 20px 0; }
+.fl_8 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 12.5%;
+  -ms-flex: 0 0 12.5%;
+  flex: 0 0 12.5%;
+  max-width: 12.5%; }
+
+.fl_9 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 11.1111111111%;
+  -ms-flex: 0 0 11.1111111111%;
+  flex: 0 0 11.1111111111%;
+  max-width: 11.1111111111%; }
+
+.fl_10 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10%;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  max-width: 10%; }
+
+.fl_11 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 9.0909090909%;
+  -ms-flex: 0 0 9.0909090909%;
+  flex: 0 0 9.0909090909%;
+  max-width: 9.0909090909%; }
+
+.fl_12 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 8.3333333333%;
+  -ms-flex: 0 0 8.3333333333%;
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%; }
 
 /*# sourceMappingURL=style.css.map */
