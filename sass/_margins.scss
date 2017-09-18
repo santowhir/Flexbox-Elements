@@ -1,22 +1,29 @@
-@each $size in $sizes {
-	.m_#{$size} {
-		margin: #{$size}px;
-	}
-	.mt_#{$size} {
-		margin-top: #{$size}px !important; 
-	}
-	.mtb_#{$size} {
-		margin-top: #{$size}px !important; 
-		margin-bottom: #{$size}px !important; 
-	}
-	.ml_#{$size} {
-		margin-left: #{$size}px !important; 
-	}
-	.mr_#{$size} {
-		margin-right: #{$size}px !important; 
-	}
-	.mlr_#{$size} {
-		margin-left: #{$size}px !important; 
-		margin-right: #{$size}px !important; 
+@each $breakpoint in $res {
+  	@media (min-width : #{$breakpoint}px) {
+		@each $size in $sizes {
+			.m-#{$breakpoint}-#{$size} {
+				margin: #{$size}px;
+			}
+			.mt-#{$breakpoint}-#{$size} {
+				margin-top: #{$size}px !important; 
+			}
+			.mb-#{$breakpoint}-#{$size} {
+				margin-bottom: #{$size}px !important; 
+			}
+			.mtb-#{$breakpoint}-#{$size} {
+				margin-top: #{$size}px !important; 
+				margin-bottom: #{$size}px !important; 
+			}
+			.ml-#{$breakpoint}-#{$size} {
+				margin-left: #{$size}px !important; 
+			}
+			.mr-#{$breakpoint}-#{$size} {
+				margin-right: #{$size}px !important; 
+			}
+			.mlr-#{$breakpoint}-#{$size} {
+				margin-left: #{$size}px !important; 
+				margin-right: #{$size}px !important; 
+			}
+		}
 	}
 }

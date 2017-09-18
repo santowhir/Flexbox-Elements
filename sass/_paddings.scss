@@ -1,22 +1,29 @@
-@each $size in $sizes {
-	.p_#{$size} {
-		padding: #{$size}px;
-	}
-	.pt_#{$size} {
-		padding-top: #{$size}px !important; 
-	}
-	.ptb_#{$size} {
-		padding-top: #{$size}px !important; 
-		padding-bottom: #{$size}px !important; 
-	}
-	.pl_#{$size} {
-		padding-left: #{$size}px !important; 
-	}
-	.pr_#{$size} {
-		padding-right: #{$size}px !important; 
-	}
-	.plr_#{$size} {
-		padding-left: #{$size}px !important; 
-		padding-right: #{$size}px !important; 
+@each $breakpoint in $res {
+  	@media (min-width : #{$breakpoint}px) {
+		@each $size in $sizes {
+			.p-#{$breakpoint}-#{$size} {
+				padding: #{$size}px;
+			}
+			.pt-#{$breakpoint}-#{$size} {
+				padding-top: #{$size}px !important; 
+			}
+			.pb-#{$breakpoint}-#{$size} {
+				padding-bottom: #{$size}px !important; 
+			}
+			.ptb-#{$breakpoint}-#{$size} {
+				padding-top: #{$size}px !important; 
+				padding-bottom: #{$size}px !important; 
+			}
+			.pl-#{$breakpoint}-#{$size} {
+				padding-left: #{$size}px !important; 
+			}
+			.pr-#{$breakpoint}-#{$size} {
+				padding-right: #{$size}px !important; 
+			}
+			.plr-#{$breakpoint}-#{$size} {
+				padding-left: #{$size}px !important; 
+				padding-right: #{$size}px !important; 
+			}
+		}
 	}
 }
