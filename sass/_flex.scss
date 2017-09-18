@@ -7,7 +7,6 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   &_child {
-    background: #ccc;
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -17,10 +16,13 @@
     flex-grow: 1;
     max-width: 100%;
   }
+  &_height {
+    height: 100%;
+  }
 }
 
 @for $i from 1 through 12 {
-  .fl_#{$i} {
+  .fl_child-#{$i} {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%/$i;
     -ms-flex: 0 0 100%/$i;
