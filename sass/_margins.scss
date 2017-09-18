@@ -1,27 +1,22 @@
-.mtb_20 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: calc(100% - 40px)  
-}
-
-.m_20 {
-  margin: 20px;
-}
-
-
-.p_20 {
-  padding: 20px;
-}
-
-.mlr_10 {
-  margin-right: 10px;
-  margin-left: 10px; 
-}
-
-.bg1 {
-  background: #ccc;
-}
-
-.h_100 {
-  height: 100%;
+@each $size in $sizes {
+	.m_#{$size} {
+		margin: #{$size}px;
+	}
+	.mt_#{$size} {
+		margin-top: #{$size}px !important; 
+	}
+	.mtb_#{$size} {
+		margin-top: #{$size}px !important; 
+		margin-bottom: #{$size}px !important; 
+	}
+	.ml_#{$size} {
+		margin-left: #{$size}px !important; 
+	}
+	.mr_#{$size} {
+		margin-right: #{$size}px !important; 
+	}
+	.mlr_#{$size} {
+		margin-left: #{$size}px !important; 
+		margin-right: #{$size}px !important; 
+	}
 }

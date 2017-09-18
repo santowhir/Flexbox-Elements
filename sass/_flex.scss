@@ -30,3 +30,17 @@
     max-width: 100%/$i;
   }
 }
+
+@each $breakpoint in $res {
+  @media (min-width : #{$breakpoint}px) {
+    @for $i from 1 through 12 {
+      .fl_child-#{$breakpoint}-#{$i} {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%/$i;
+        -ms-flex: 0 0 100%/$i;
+        flex: 0 0 100%/$i;
+        max-width: 100%/$i;
+      }
+    }
+  }
+}
